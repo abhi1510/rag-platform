@@ -1,4 +1,4 @@
-# rag-platform
+# ContextStream - A RAG platform
 A production-style Retrieval-Augmented Generation (RAG) system that enables querying documents using LLMs with grounded responses, source attribution, and basic guardrails.
 
 ## 🧠 Overview
