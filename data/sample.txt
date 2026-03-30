@@ -1,0 +1,72 @@
+System Design Fundamentals
+
+System design is the process of defining the architecture, components, modules, interfaces, and data for a system to satisfy specified requirements.
+
+Key System Design Topics:
+
+1. Scalability
+Scalability refers to the system’s ability to handle increased load. It can be achieved by vertical scaling (adding more power to a single machine) or horizontal scaling (adding more machines).
+
+2. Load Balancing
+Load balancers distribute incoming network traffic across multiple servers to ensure reliability and availability.
+
+3. Caching
+Caching improves system performance by storing frequently accessed data in memory. Common caching systems include Redis and Memcached.
+
+4. Database Design
+Database design involves choosing between SQL and NoSQL databases, indexing strategies, normalization vs denormalization, and replication.
+
+5. CAP Theorem
+The CAP theorem states that a distributed system can only guarantee two out of the following three:
+- Consistency
+- Availability
+- Partition Tolerance
+
+6. Microservices Architecture
+Microservices break down applications into smaller, independent services that communicate over APIs.
+
+7. Message Queues
+Message queues like Kafka and RabbitMQ enable asynchronous communication between services.
+
+8. API Design
+Good API design includes RESTful principles, proper versioning, and clear documentation.
+
+9. Fault Tolerance
+Systems should be resilient to failures using techniques like retries, circuit breakers, and redundancy.
+
+10. Observability
+Observability includes logging, metrics, and tracing to monitor system health and debug issues.
+
+---
+
+Additional Notes:
+
+- Horizontal scaling is preferred for large distributed systems.
+- Caching should be used carefully to avoid stale data.
+- Database sharding is used to distribute data across multiple machines.
+- Event-driven architecture is useful for real-time systems.
+
+---
+
+Example Scenario:
+
+Design a URL shortening service like bit.ly:
+- Generate unique short URLs
+- Redirect to original URLs
+- Handle high read traffic
+- Ensure low latency
+
+Components involved:
+- API layer
+- Database (NoSQL preferred)
+- Cache layer
+- Load balancer
+
+---
+
+Best Practices:
+
+- Always design for failure
+- Keep systems loosely coupled
+- Optimize for read-heavy vs write-heavy workloads
+- Use monitoring and alerting systems
